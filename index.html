@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Sanath's Portfolio</title>
 
   <!--
     - favicon
@@ -42,13 +42,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/shakil_photo_3.jpg" alt="Shakil Ahmed" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Shakil Ahmed">Shakil Ahmed</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Software Development Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:shakilahmedndc@gmail.com" class="contact-link">shakilahmedndc@gmail.com</a>
             </div>
 
           </li>
@@ -88,64 +88,38 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+8801721610952" class="contact-link">+8801721610952</a>
             </div>
 
           </li>
+          
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/shakil-ahmed-13a2ba1b2/" target="_blank">Shakil Ahmed</a>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
             </div>
-
           </li>
-
+  
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
+              <p class="contact-title">GitHub</p>
+              <a class="contact-link" href="https://github.com/Shakil018" target="_blank">Shakil018</a>
             </div>
-
           </li>
 
         </ul>
 
         <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
 
       </div>
 
@@ -166,33 +140,21 @@
       -->
 
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link data-target="about">About</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-target="projects">Academic Projects</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
         </ul>
-
       </nav>
-
 
 
 
@@ -201,308 +163,28 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article id="about" class="about" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+
+            I am a doctoral student in Computer Science and Engineering at the University at Buffalo, under the supervision of Dr. Wenyao Xu. My research focuses on intelligent sensing systems, biometrics, cybersecurity and smart healthcare, with an emphasis on developing sensing and machine-learning-based solutions for real-world applications.
+
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Previously I worked as a Software Development Engineer at IQVIA. I completed my undergraduate studies in Computer Science and Engineering at the Bangladesh University of Engineering and Technology (BUET).
+
           </p>
         </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
+    
       </article>
+
+
 
 
 
@@ -512,11 +194,123 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article id="resume" class="resume" data-page="resume">
+
+
+        <!-- <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am Shakil Ahmed, a Software Development Engineer at IQVIA. I completed my undergraduate studies in Computer Science and Engineering from the Bangladesh University of Engineering and Technology (BUET). I am deeply interested in the field of Security and Privacy, particularly in exploring how AI and machine learning can be applied to enhance system security and resilience.
+          </p>
+
+          <p>
+            My research interests lie at the intersection of systems, security, and machine learning, with a focus on leveraging large language models (LLMs), generative models, and reinforcement learning to strengthen defenses, uncover vulnerabilities, and design systems that can adapt to evolving threats while maintaining robustness and reliability in practical applications.
+          </p>
+        </section> -->
+
+
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University at Buffalo, State University of New York</h4>
+              <span>Graduate Research Assistant</span>
+              <span>August 2026 - Present</span>
+
+              <p class="timeline-text">
+                I am working as a Graduate Research Assistant at the ESC group at the University at Buffalo, under the supervision of Dr. Wenyao Xu.
+                
+                <!-- I am currently working as a Software Development Engineer II at the Orchestrated Analytics platform of IQVIA, where I contribute to building scalable, data-driven solutions. My work involves developing and optimizing services using a modern tech stack that includes .NET, AWS, Microservices, Docker, Kubernetes, SQL, and MongoDB. I have built a background processing module for automated email digests featuring dynamic visualizations powered by Highcharts and Puppeteer Sharp, orchestrated using Kubernetes Jobs and Mongo-backed queues. I have also engineered performance-optimized REST APIs, implemented RabbitMQ-based event-driven integrations, managed Hangfire background jobs, and contributed to CI/CD pipelines and Kubernetes deployments. For my contributions, I received the Gold Award in the IQVIA Impact Program for outstanding performance and impact. -->
+              </p>
+
+            </li>
+
+          </ol>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IQVIA</h4>
+              <span>Software Development Engineer II</span>
+              <span>June 2023 - July 2026</span>
+
+              <p class="timeline-text">
+                I had worked as a Software Development Engineer II on the Orchestrated Analytics platform at IQVIA, building scalable data-driven solutions with .NET, AWS, Microservices, Docker, Kubernetes, SQL, and MongoDB. I developed a background processing module for automated email digests with dynamic visualizations (Highcharts, Puppeteer Sharp), and engineered optimized APIs, RabbitMQ integrations, and Hangfire jobs. I also contributed to CI/CD pipelines and Kubernetes deployments, earning the Gold Award in the IQVIA Impact Program.
+
+                <!-- I am currently working as a Software Development Engineer II at the Orchestrated Analytics platform of IQVIA, where I contribute to building scalable, data-driven solutions. My work involves developing and optimizing services using a modern tech stack that includes .NET, AWS, Microservices, Docker, Kubernetes, SQL, and MongoDB. I have built a background processing module for automated email digests featuring dynamic visualizations powered by Highcharts and Puppeteer Sharp, orchestrated using Kubernetes Jobs and Mongo-backed queues. I have also engineered performance-optimized REST APIs, implemented RabbitMQ-based event-driven integrations, managed Hangfire background jobs, and contributed to CI/CD pipelines and Kubernetes deployments. For my contributions, I received the Gold Award in the IQVIA Impact Program for outstanding performance and impact. -->
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title">
+                <a href="https://doi.org/10.1109/TDSC.2025.3639982" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: inherit;">
+                  Detecting Stealthy Web Bots: A Behavioral Analysis Framework for OpenWPM Automation
+                </a>
+              </h4>
+              
+              <span>Shakil Ahmed, Md. Mahedi Hasan Rigan, Md. Shohrab Hossain, Anupam Das</span>
+
+              <p class="timeline-text">
+                This work was conducted as my undergraduate thesis under the supervision of Dr. Md. Shohrab Hossain and Dr. Anupam Das. In this work, we collected and analyzed behavioral data including mouse movements, clicks, keypresses, and the relatively under-explored scrolling behavior to distinguish human users from Selenium and OpenWPM automation. We proposed a novel lightweight framework that combines classification models with clustering, designed to be robust to missing interaction data and generalizable across platforms such as e-commerce and social networks. This work was accepted at <em>IEEE Transactions on Dependable and Secure Computing (TDSC)</em> (<span class="doi" style="white-space: nowrap;">DOI:<a href="https://doi.org/10.1109/TDSC.2025.3639982" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: inherit;"> 10.1109/TDSC.2025.3639982</a></span>).
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ExtendedAIST: Improving Interpretable Crime Prediction through Graph Homophily and Contextual Correlations</h4>
+
+              <span>Shakil Ahmed, Asif Mustafa Hasan, Dr. Tanzima Hashem</span>
+
+              <p class="timeline-text">
+                Under the supervision of Dr. Tanzima Hashem, this research project extended the crime prediction framework <a href="https://doi.org/10.1145/3582274" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;" class="doi">AIST</a> by incorporating a graph homophily constraint to enhance regional crime representation learning. A cross-category crime correlation module was also developed to improve predictive performance, resulting in lower loss compared to the original <a href="https://doi.org/10.1145/3582274" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;" class="doi">AIST</a> baseline. We are currently expanding this work by integrating socio-economic distributions and weather updates as external features to further strengthen the model’s predictive capabilities.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
 
         <section class="timeline">
 
@@ -532,41 +326,31 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">University at Buffalo, State Univeristy of New York</h4>
 
-              <span>2007 — 2008</span>
+              <span>Ph.D. in Computer Science and Engineering</span>
+              <span>August 2026 — Present</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                I am a first-year Ph.D. student in Computer Science and Engineering at the University at Buffalo, working under the supervision of Dr. Wenyao Xu.
               </p>
 
             </li>
 
-            <li class="timeline-item">
+          </ol>
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
+          <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">Bangladesh University of Engineering and Technology</h4>
 
-              <span>2002 — 2004</span>
+              <span>BSc. in Computer Science and Engineering</span>
+              <span>April 2018 — May 2023</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                CGPA: 3.76/4.00 <br>
+                Notable Courses: Computer Networks, Computer Security, Machine Learning, High-Performance Database Systems, Algorithm Engineering, Computer Architecture, Microprocessors, Microcontrollers Embedded Systems, Operating Systems, Computer Graphics, Introduction to Bioinformatics.
               </p>
 
             </li>
@@ -574,6 +358,8 @@
           </ol>
 
         </section>
+
+
 
         <section class="timeline">
 
@@ -582,49 +368,84 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Technical Skills</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Languages: C, C++, Python, Java, JavaScript, x86 Assembly, Bash, SQL</h4>
 
-              <span>2015 — Present</span>
+              <!-- <span>Bangladesh University of Engineering and Technology</span>
+              <span>April 2018 — May 2023</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                CGPA: 3.76/4.00 <br>
+                Notable Courses: Computer Networks, Computer Security, Machine Learning, High-Performance Database Systems, Algorithm Engineering, Computer Architecture, Microprocessors, Microcontrollers Embedded Systems, Operating Systems, Computer Graphics, Introduction to Bioinformatics.
+              </p> -->
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title">Frameworks & Tools: .NET, Angular, ReactJS, Django REST, Docker, Kubernetes,
+AWS, RabbitMQ, Git, NS3, xv6, LaTeX, PyTorch, TensorFlow, Bison/Flex</h4>
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title">Databases: MySQL, PostgreSQL, MongoDB, MSSQL, Oracle DBMS</h4>
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title">Libraries: Scikit-learn, Pandas, Matplotlib, Seaborn</h4>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Honors and Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Gold Award in the IQVIA Impact Program</h4>
+              <span>2024, IQVIA</span>
+              <p class="timeline-text">
+                Awarded the Gold Award in the IQVIA Impact Program, recognizing top-performing employees for exceptional engineering impact and innovation.
               </p>
 
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
+              <h4 class="h4 timeline-item-title">Dean’s List Scholarship</h4>
+              <span>2021-2022, Bangladesh University of Engineering and Technology (BUET)</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Received the Dean’s List Scholarship in recognition of academic excellence.
               </p>
 
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
+              <h4 class="h4 timeline-item-title">University Admission Test Merit Scholarship</h4>
+              <span>2018, Bangladesh University of Engineering and Technology (BUET)</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Awarded for outstanding performance in the highly competitive university admission test, recognizing academic excellence and merit.
               </p>
 
             </li>
@@ -633,322 +454,18 @@
 
         </section>
 
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
 
-
-
-
       <!--
-        - #PORTFOLIO
+        - #Academic Projectrs
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article id="projects" class="blog" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Academic Projects</h2>
         </header>
 
         <section class="blog-posts">
@@ -956,26 +473,35 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://github.com/Shakil018/englishour-backend">
 
-                <figure class="blog-banner-box">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <!-- <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy"> -->
+                  <img src="./assets/images/englishour.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                </figure> -->
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">View on GitHub</p>
 
-                    <span class="dot"></span>
+                    <!-- <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Fab 23, 2022</time> -->
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Englishour</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    A language lerarning platform
                   </p>
 
                 </div>
@@ -984,26 +510,35 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://github.com/Shakil018/gscholar-database-sessional">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <!-- <img 
+                    src="./assets/images/gscholar_resized.png" 
+                    alt="Google Scholar" 
+                    loading="lazy"
+                    style="height: 200px; width: auto; object-fit: contain; display: block;"
+                  > -->
+
+
+
+                  <img src="./assets/images/gscholar_resized.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-category">View on GitHub</p>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Google Scholar for CSE</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    A research management and academic search platform
                   </p>
 
                 </div>
@@ -1012,26 +547,55 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://github.com/Shakil018/microcontroller_project">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rubiks.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-category">View on GitHub</p>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Rubik’s Cube Solver</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Hardware Project using ATmega32 Microcontroller
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Shakil018/Compiler_Project_CSE310">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/compiler.jpeg" alt="orizon" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">View on GitHub</p>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">C Compiler</h3>
+
+                  <p class="blog-text">
+                    Flex/Bison-based compiler with x86 assembly generation
                   </p>
 
                 </div>
@@ -1040,82 +604,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://github.com/Shakil018/Computer-Architecture-Sessional">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mips.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-category">View on GitHub</p>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Computer Architecture Project</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    ALU, Floating-Point Adder, and MIPS Pipeline Design
                   </p>
 
                 </div>
@@ -1130,14 +638,11 @@
       </article>
 
 
-
-
-
       <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article id="contact" class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1145,44 +650,36 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.33073676813757!2d90.44857968910051!3d23.701271925565965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1761165556778!5m2!1sen!2sbd" 
+            width="400" height="300" loading="lazy"></iframe> -->
+
+            <!-- <iframe src="https://www.google.com/maps?q=23.701262,90.448468&hl=en&z=17&output=embed" 
+            width="400" height="300" loading="lazy"></iframe> -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.7448004790637!2d-78.78797396115557!3d43.002799450164204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3731d068c2cd7%3A0xa3d0a835ba98f517!2sDavis%20Hall%20-%20University%20at%20Buffalo!5e0!3m2!1sen!2sus!4v1789256965771!5m2!1sen!2sus" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
           </figure>
         </section>
 
         <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <div class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="label" style="color: var(--light-gray);">Email</p>
+                <a href="mailto:shakilahmedndc@gmail.com" class="email-link">shakilahmedndc@gmail.com</a>
+              </div>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
+          </section>
 
       </article>
 
     </div>
 
   </main>
-
-
-
-
 
 
   <!--

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanath Kumar Das</title>
-  <meta name="description" content="Sanath Kumar Das - Lecturer in Electrical and Electronic Engineering at East Delta University. Prospective Phd candidate on EEG-based brain-computer interfaces and deep learning for neural decoding.">
+  <meta name="description" content="Sanath Kumar Das - prospective PhD student (Fall 2027) in neural engineering. MSc researcher at BUET working on EEG-based brain-computer interfaces, imagined speech decoding and deep representation learning.">
 
   <!--
     - favicon
@@ -17,6 +17,18 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - apply saved / system theme before first paint
+  -->
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (!theme) theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
 
   <!--
     - google font link
@@ -43,13 +55,15 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/sanath_das_photo.jpg" alt="Sanath Kumar Das" width="100">
+          <img src="./assets/sanath_das_photo.jpg" alt="Sanath Kumar Das" width="190" height="190">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Sanath Kumar Das">Sanath Kumar Das</h1>
 
-          <p class="title">Lecturer, East Delta University,<br> Chittagong, Bangladesh</p>
+          <p class="phd-badge">Prospective PhD Student &middot; Fall 2027</p>
+
+          <p class="title">Lecturer, Dept. of EEE<br>East Delta University<br>Chittagong, Bangladesh</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -110,50 +124,29 @@
             </div>
           </li>
 
-          <li class="contact-item">
-            <div class="icon-box">
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="profile-links">
+          <li>
+            <a href="https://www.linkedin.com/in/sanathkumardas/" class="profile-link" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/sanathkumardas/" class="contact-link" target="_blank" rel="noopener">Sanath Kumar Das</a>
-            </div>
+            </a>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
+          <li>
+            <a href="https://github.com/sanathkumar015" class="profile-link" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
               <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-              <a href="https://github.com/sanathkumar015" class="contact-link" target="_blank" rel="noopener">sanathkumar015</a>
-            </div>
+            </a>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Google Scholar</p>
-              <a href="https://scholar.google.com/citations?user=zIXv334AAAAJ&amp;hl=en" class="contact-link" target="_blank" rel="noopener">Sanath Kumar Das</a>
-            </div>
+          <li>
+            <a href="https://scholar.google.com/citations?user=zIXv334AAAAJ&amp;hl=en" class="profile-link" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+              <ion-icon name="school"></ion-icon>
+            </a>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="document-text-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">ResearchGate</p>
-              <a href="https://www.researchgate.net/profile/Sanath-Das-2/research" class="contact-link" target="_blank" rel="noopener">Sanath Das</a>
-            </div>
+          <li>
+            <a href="https://www.researchgate.net/profile/Sanath-Das-2/research" class="profile-link profile-link-text" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate">R<sup>G</sup></a>
           </li>
-
         </ul>
 
         <div class="separator"></div>
@@ -190,6 +183,12 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
           </li>
+          <li class="navbar-item">
+            <button class="theme-toggle" data-theme-toggle title="Switch light/dark theme" aria-label="Switch light/dark theme">
+              <ion-icon name="moon-outline" class="icon-moon"></ion-icon>
+              <ion-icon name="sunny-outline" class="icon-sun"></ion-icon>
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -200,7 +199,7 @@
         - #ABOUT
       -->
 
-      <article id="about" class="about" data-page="about">
+      <article id="about" class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About</h2>
@@ -208,16 +207,55 @@
 
         <section class="about-text">
           <p>
-            I am a Lecturer in the Department of Electrical and Electronic Engineering at East Delta University, Chattogram, Bangladesh. I hold a BSc in Electrical and Electronic Engineering from the Bangladesh University of Engineering and Technology (BUET), where I majored in communication and signal processing, and I am currently pursuing my MSc there.
+            I am a <strong>prospective PhD student for Fall 2027</strong>, seeking to pursue doctoral research in neural engineering and brain&ndash;computer interfaces. I am currently completing my MSc in Electrical and Electronic Engineering at the Bangladesh University of Engineering and Technology (BUET), where I also received my BSc in 2023 with a major in Communication and Signal Processing. I also work as a Lecturer in the Department of Electrical and Electronic Engineering at East Delta University, Chittagong, where I have been teaching since May 2024.
           </p>
 
           <p>
-            My research focuses on brain-computer interfaces and neural decoding, in particular decoding inner (imagined) speech from EEG using deep learning, with an emphasis on generalizing across subjects. I am interested in neural engineering more broadly: decoding and processing of neural signals, neuroprosthetics and assistive devices, and neurostimulation. My goal is to build technology that restores lost function for people with paralysis and neurological conditions.
+            My MSc research addresses a central obstacle to practical speech BCIs: because EEG varies substantially from one person to another, a decoder trained on one group of people rarely works well for a new user. I study <strong>cross-subject generalization of inner speech decoding from EEG signals</strong>, combining deep learning architectures (CNNs, Transformers, hybrid networks and graph neural networks) with domain adaptation techniques to learn neural representations that remain stable across individuals. The goal is a decoder that can be deployed to a new user <strong>with few-trial calibration</strong>, rather than lengthy subject-specific training.
           </p>
 
           <p>
-            I enjoy work that combines hardware with software and AI, and I am seeking to pursue a PhD in neural engineering starting in Fall 2027.
+            I enjoy work that brings together hardware, signal processing and AI. Before turning to BCIs, I worked on cooperative multi-robot systems, which led to publications at ICCIT 2024. In my PhD, I want to build neurotechnology that restores lost function for people with paralysis, and to develop neurostimulation approaches for treating psychiatric and neurological disorders.
           </p>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="bulb-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">PhD Research Interests</h3>
+          </div>
+
+          <ul class="interest-list">
+            <li class="interest-item">
+              <ion-icon name="git-network-outline"></ion-icon>
+              <span>Brain&ndash;computer interfaces and neural decoding of speech and movement</span>
+            </li>
+            <li class="interest-item">
+              <ion-icon name="pulse-outline"></ion-icon>
+              <span>Deep representation learning for EEG and physiological signals, with cross-subject generalization</span>
+            </li>
+            <li class="interest-item">
+              <ion-icon name="analytics-outline"></ion-icon>
+              <span>Invasive and non-invasive neural signal processing</span>
+            </li>
+            <li class="interest-item">
+              <ion-icon name="hand-left-outline"></ion-icon>
+              <span>Neuroprosthetics and assistive devices</span>
+            </li>
+            <li class="interest-item">
+              <ion-icon name="flash-outline"></ion-icon>
+              <span>Neurostimulation for the treatment of psychiatric and neurological disorders</span>
+            </li>
+            <li class="interest-item">
+              <ion-icon name="accessibility-outline"></ion-icon>
+              <span>Rehabilitation engineering and assistive robotics</span>
+            </li>
+          </ul>
+
         </section>
 
       </article>
@@ -238,14 +276,26 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
+        <div class="doc-banner">
+          <a href="./assets/resume/CV_Sanath_kumar_Das%20-2026.pdf" class="doc-link" target="_blank" rel="noopener">
+            <ion-icon name="document-outline"></ion-icon> View Full CV
+          </a>
+          <a href="./assets/certificates/Bsc%20transcript.pdf" class="doc-link" target="_blank" rel="noopener">
+            <ion-icon name="document-text-outline"></ion-icon> BSc Transcript
+          </a>
+          <a href="./assets/certificates/BSc%20Certificate.pdf" class="doc-link" target="_blank" rel="noopener">
+            <ion-icon name="ribbon-outline"></ion-icon> BSc Certificate
+          </a>
+        </div>
+
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Work Experience</h3>
+            <h3 class="h3">Teaching Experience</h3>
           </div>
 
           <ol class="timeline-list">
@@ -254,11 +304,12 @@
 
               <h4 class="h4 timeline-item-title">East Delta University, Chattogram, Bangladesh</h4>
               <span>Lecturer, Department of Electrical and Electronic Engineering</span>
-              <span>TODO start year &mdash; Present</span>
+              <span>May 2024 &mdash; Present</span>
 
-              <p class="timeline-text">
-                Lecturer in the Department of Electrical and Electronic Engineering, School of Science, Engineering &amp; Technology (SoSET). TODO: add 1-2 sentences on the courses you teach and any lab or supervision work.
-              </p>
+              <ul class="timeline-text timeline-bullets">
+                <li>Prepare course materials, including lecture notes, assignments and exam questions.</li>
+                <li>Deliver lectures and mentor undergraduate students on academic projects.</li>
+              </ul>
 
             </li>
 
@@ -272,7 +323,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -284,12 +335,12 @@
 
               <h4 class="h4 timeline-item-title">Bangladesh University of Engineering and Technology (BUET)</h4>
 
-              <span>MSc in Electrical and Electronic Engineering (ongoing)</span>
-              <span>TODO start year &mdash; Present</span>
+              <span>MSc in Electrical and Electronic Engineering</span>
+              <span>Ongoing</span>
 
               <p class="timeline-text">
-                CGPA: 3.66/4.00 <br>
-                Thesis: Cross-subject generalization of inner speech decoding using deep learning.
+                CGPA: 3.66 / 4.00 <br>
+                Thesis: <em>Cross-Domain Generalization of Deep Neural Decoders for Inner Speech from EEG Signals</em>
               </p>
 
             </li>
@@ -299,12 +350,22 @@
               <h4 class="h4 timeline-item-title">Bangladesh University of Engineering and Technology (BUET)</h4>
 
               <span>BSc in Electrical and Electronic Engineering</span>
-              <span>TODO start year &mdash; TODO end year</span>
+              <span>2018 &mdash; 2023</span>
 
               <p class="timeline-text">
-                CGPA: 3.51/4.00 <br>
-                Major: Communication and Signal Processing. TODO: add notable courses (for example Digital Signal Processing, Biomedical Instrumentation, Control Systems, Machine Learning).
+                CGPA: 3.51 / 4.00 <br>
+                Major: Communication and Signal Processing <br>
+                Thesis: <em>A Collaborative Multi-Robot Coverage Path Planning and Efficient Target Search System</em>
               </p>
+
+              <div class="doc-links">
+                <a href="./assets/certificates/BSc%20Certificate.pdf" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="ribbon-outline"></ion-icon> Certificate
+                </a>
+                <a href="./assets/certificates/Bsc%20transcript.pdf" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="document-text-outline"></ion-icon> Transcript
+                </a>
+              </div>
 
             </li>
 
@@ -318,7 +379,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="newspaper-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Publications</h3>
@@ -328,25 +389,40 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">TODO: title of conference paper 1</h4>
+              <h4 class="h4 timeline-item-title">Collaborative Path Planning and Target Search in Multi-Robot Systems with PID-Controlled Uniform Area Partitioning</h4>
 
-              <span>TODO: authors (put your name first or in bold as appropriate)</span>
+              <span>2024 International Conference on Computer and Information Technology (ICCIT)</span>
 
               <p class="timeline-text">
-                TODO: conference name, year, and a DOI or link if available.
+                <strong>Sanath Kumar Das</strong>, Arpan Sur, Md. Farhad Hossain
               </p>
+
+              <div class="doc-links">
+                <a href="https://doi.org/10.1109/ICCIT64611.2024.11022590" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="link-outline"></ion-icon> DOI: 10.1109/ICCIT64611.2024.11022590
+                </a>
+                <a href="https://github.com/sanathkumar015/Multi-Robot-Path-Planning-Target-Search-with-PID-Controlled-Uniform-Partitioning" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon> Code
+                </a>
+              </div>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">TODO: title of conference paper 2</h4>
+              <h4 class="h4 timeline-item-title">Aquatic Robot for Trash Removal and Water Quality Monitoring Built from Recycled Materials</h4>
 
-              <span>TODO: authors</span>
+              <span>2024 13th International Conference on Electrical and Computer Engineering (ICECE)</span>
 
               <p class="timeline-text">
-                TODO: conference name, year, and a DOI or link if available.
+                <strong>Sanath Kumar Das</strong>, Sudipta Saha, Fatin Fardaous, et al.
               </p>
+
+              <div class="doc-links">
+                <a href="https://doi.org/10.1109/ICECE64886.2024.11024687" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="link-outline"></ion-icon> DOI: 10.1109/ICECE64886.2024.11024687
+                </a>
+              </div>
 
             </li>
 
@@ -360,7 +436,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="code-slash-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Technical Skills</h3>
@@ -369,19 +445,23 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Languages: Python, TODO (for example MATLAB, C/C++)</h4>
+              <h4 class="h4 timeline-item-title">Programming</h4>
+              <p class="timeline-text">Python, C, C++, MATLAB, Verilog, SystemVerilog</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Neural signal analysis: MNE-Python, EEG preprocessing, filtering and feature extraction</h4>
+              <h4 class="h4 timeline-item-title">Machine Learning / Data Science</h4>
+              <p class="timeline-text">PyTorch, scikit-learn, NumPy, Pandas, Matplotlib</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Deep learning: CNN-based EEG decoders, domain adaptation, few-shot calibration, TODO (for example PyTorch, TensorFlow)</h4>
+              <h4 class="h4 timeline-item-title">BCI Tools</h4>
+              <p class="timeline-text">MNE-Python, pyRiemann</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Tools: Git, Kaggle, LaTeX, TODO</h4>
+              <h4 class="h4 timeline-item-title">Simulation / Tools</h4>
+              <p class="timeline-text">Simulink, Proteus, Quartus, CoppeliaSim</p>
             </li>
 
           </ol>
@@ -389,32 +469,67 @@
         </section>
 
 
-
-        <!--
-          Honors and Awards: uncomment and fill in when you are ready.
 
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="trophy-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Honors and Awards</h3>
+            <h3 class="h3">Awards and Achievements</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Award name</h4>
-              <span>Year, Awarding body</span>
-              <p class="timeline-text">One-line description.</p>
+              <h4 class="h4 timeline-item-title">RISE Research Grant</h4>
+              <span>2022</span>
+              <p class="timeline-text">Received a research grant of 30,000 BDT.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Merit Scholarships</h4>
+              <p class="timeline-text">Awarded scholarships in the Secondary (SSC) and Higher Secondary (HSC) examinations.</p>
             </li>
 
           </ol>
 
         </section>
-        -->
+
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Leadership and Volunteer Activities</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">General Secretary, BUET Robotics Society</h4>
+              <span>2022 &mdash; 2023</span>
+              <div class="doc-links">
+                <a href="https://drive.google.com/file/d/1BmqihTa_n74NPCu4hbopxd-fjtKFP4jF/view?usp=drive_link" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="ribbon-outline"></ion-icon> Certificate
+                </a>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Instructor, Basic Robotics Workshop</h4>
+              <span>Organized by BUET Robotics Club</span>
+            </li>
+
+          </ol>
+
+        </section>
+
 
 
       </article>
@@ -434,34 +549,131 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="flask-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Research Focus</h3>
+            <h3 class="h3">Research Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Cross-Subject Generalization of Inner Speech Decoding Using Deep Learning</h4>
+              <h4 class="h4 timeline-item-title">Cross-Domain Generalization of Deep Neural Decoders for Inner Speech from EEG Signals</h4>
 
               <span>MSc Thesis, BUET (ongoing)</span>
 
               <p class="timeline-text">
-                This work studies how imagined (inner) speech from a closed vocabulary can be decoded from EEG, and how decoders can generalize to new subjects whose brain signals differ from those seen during training. I use deep learning together with domain adaptation and few-shot calibration so that a decoder needs only a small amount of data from a new user. I also examine how much of a decoder's performance reflects genuine neural activity rather than artifacts or recording confounds.
+                Focus: cross-subject generalization of inner speech decoding from EEG, using domain adaptation in deep learning architectures so that decoders adapt to new users with few-trial calibration.
               </p>
+
+              <ul class="timeline-text timeline-bullets">
+                <li>Applying domain adaptation techniques so that decoders trained on existing subjects transfer to unseen subjects with only few-trial calibration.</li>
+                <li>Processing multi-channel EEG signals and investigating time&ndash;frequency, spatial and connectivity-based feature extraction methods for imagined word decoding.</li>
+                <li>Implementing deep learning architectures, including CNNs, Transformers, hybrid networks and graph neural networks, to model spatial&ndash;temporal neural dynamics from EEG.</li>
+                <li>Evaluating handcrafted and learned representations with an emphasis on robustness, generalization and neurophysiological interpretability for real-world BCI applications.</li>
+              </ul>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Research Interests</h4>
+              <h4 class="h4 timeline-item-title">A Collaborative Multi-Robot Coverage Path Planning and Efficient Target Search System</h4>
 
-              <p class="timeline-text">
-                Brain-computer interfaces; neural decoding of speech and movement; invasive and non-invasive neural signal processing; neuroprosthetics and assistive robotics; neurostimulation for neurological conditions.
-              </p>
+              <span>BSc Thesis, BUET</span>
 
+              <ul class="timeline-text timeline-bullets">
+                <li>Designed a cooperative multi-robot exploration system for unknown environments.</li>
+                <li>Implemented coverage path planning and efficient target search algorithms.</li>
+                <li>Performed simulation and timing analysis using CoppeliaSim and Python.</li>
+              </ul>
+
+              <div class="doc-links">
+                <a href="https://doi.org/10.1109/ICCIT64611.2024.11022590" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="link-outline"></ion-icon> Published at ICCIT 2024 (DOI)
+                </a>
+                <a href="https://github.com/sanathkumar015/Multi-Robot-Path-Planning-Target-Search-with-PID-Controlled-Uniform-Partitioning" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon> Code
+                </a>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Academic Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">PPG-Based Pulse Monitoring and Counting System</h4>
+              <p class="timeline-text">Design and hardware implementation using an IR sensor and amplifier.</p>
+              <div class="doc-links">
+                <a href="https://drive.google.com/file/d/1pBPi48xbXudeB30F_9PSrDZrp6ValWHn/view?usp=drive_link" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="document-text-outline"></ion-icon> Report
+                </a>
+                <a href="https://drive.google.com/file/d/19YhBmOqJSXxzVDV1P3J8SEt6t4xcPH5I/view?usp=drive_link" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="easel-outline"></ion-icon> Presentation
+                </a>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Aquatic Multi-Purpose Robot for Water Surface Trash Cleaning and Water Quality Monitoring</h4>
+              <p class="timeline-text">Built from recycled materials; published at ICECE 2024.</p>
+              <div class="doc-links">
+                <a href="https://doi.org/10.1109/ICECE64886.2024.11024687" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="link-outline"></ion-icon> Paper (DOI)
+                </a>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">8-bit TDM-PCM Transmitter and Receiver System</h4>
+              <p class="timeline-text">Simulation in Proteus.</p>
+              <div class="doc-links">
+                <a href="https://drive.google.com/file/d/19UDIN7hmKCGvI70BY4BoU8GJtXGtwErg/view?usp=drive_link" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="document-text-outline"></ion-icon> Report
+                </a>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Real-Time Human Detection and Social Distance Monitoring Using YOLOv3 for the COVID-19 Situation</h4>
+              <p class="timeline-text">Computer vision pipeline that detects people in video and flags violations of social distancing.</p>
+              <div class="doc-links">
+                <a href="https://drive.google.com/drive/u/0/folders/1kLL5TozuRrSltgExfg0NZVuUEOgyVK31" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="document-text-outline"></ion-icon> Report
+                </a>
+                <a href="https://docs.google.com/presentation/d/18a1HpkD9DAfUca2k8Fe7D-w9hoU9ixcV/edit?usp=drive_web&amp;ouid=110079139032147456502&amp;rtpof=true" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="easel-outline"></ion-icon> Presentation
+                </a>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">IoT-Enabled Fire and Gas Leak Detection and Automatic Prevention System</h4>
+              <p class="timeline-text">Built on an ESP32 microcontroller.</p>
+              <div class="doc-links">
+                <a href="https://drive.google.com/file/d/1YfQnHGjwJh7Umbiw_QTgpTN6sV4PI9v7/view?usp=drive_link" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="document-text-outline"></ion-icon> Report
+                </a>
+                <a href="https://github.com/sanathkumar015/Gas-Leak-Detection-and-Explosion-Prevention-with-Air-Quality-Monitoring-System" class="doc-link" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon> Code
+                </a>
+              </div>
             </li>
 
           </ol>
@@ -483,25 +695,57 @@
 
         <section class="contact-form">
 
-          <div class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="label" style="color: var(--light-gray);">Email</p>
-              <a href="mailto:sanathdas98@gmail.com" class="email-link">sanathdas98@gmail.com</a>
-            </div>
-          </div>
+          <p class="timeline-text" style="margin-bottom: 20px;">
+            I am happy to hear from prospective collaborators, supervisors and students. Email is the best way to reach me.
+          </p>
 
-          <div class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="label" style="color: var(--light-gray);">University Email</p>
-              <a href="mailto:sanath.k@eastdelta.edu.bd" class="email-link">sanath.k@eastdelta.edu.bd</a>
-            </div>
-          </div>
+          <ul class="contacts-list">
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:sanathdas98@gmail.com" class="contact-link">sanathdas98@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">University Email</p>
+                <a href="mailto:sanath.k@eastdelta.edu.bd" class="contact-link">sanath.k@eastdelta.edu.bd</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+8801533648725" class="contact-link">+8801533648725</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Google Scholar</p>
+                <a href="https://scholar.google.com/citations?user=zIXv334AAAAJ&amp;hl=en" class="contact-link" target="_blank" rel="noopener">Sanath Kumar Das</a>
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="timeline-text" style="margin-top: 20px;">
+            References are available on request.
+          </p>
 
         </section>
 
